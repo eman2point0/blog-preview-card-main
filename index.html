@@ -24,7 +24,7 @@
         justify-content: center;
         margin: 0;
         flex-direction: column;
-        background-color: rgb(250, 182, 55);
+        background-color: hsl(47, 88%, 63%);
       }
 
       .attribution {
@@ -53,8 +53,27 @@
         margin-bottom: 10px;
       }
 
+      .card a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .card a:hover {
+        cursor: pointer;
+        color: orange;
+      }
+
       .card h2 {
         margin: 10px 0;
+      }
+
+      .card .low-contrast {
+        color: hsl(0, 0%, 7%);
+      }
+
+      .card .high-contrast {
+        color: hsl(0, 0%, 42%);
+        font-size: 18px;
       }
 
       .image-container {
@@ -69,20 +88,32 @@
       }
 
       .topic {
-        background-color: rgb(245, 176, 47);
-        font-size: 12px;
+        background-color: hsl(47, 88%, 63%);
+        font-size: 16px;
         font-weight: bold;
         border-radius: 3px;
         width: max-content;
-        padding: 5px 10px;
+        padding: 8px 15px;
 
         margin-top: 20px;
+      }
+
+      .topic p {
+        margin: 0;
       }
 
       .profile-section {
         display: flex;
         align-items: center;
         gap: 20px;
+      }
+
+      .profile-section img {
+        height: 70%;
+      }
+
+      .profile-section p {
+        font-weight: bolder;
       }
     </style>
   </head>
@@ -95,15 +126,17 @@
       <div class="topic">
         <p><strong>Learning</strong></p>
       </div>
-      <p>Published 21 Dec 2023</p>
-      <h2>HTML & CSS foundations</h2>
-      <p>
+      <p class="low-contrast">Published 21 Dec 2023</p>
+      <a href="#">
+        <h2>HTML & CSS foundations</h2>
+      </a>
+      <p class="high-contrast">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
       </p>
       <div class="profile-section">
         <img src="./assets/images/image-avatar.webp" alt="Profile picture" />
-        <p><strong>Greg Hooper</strong></p>
+        <p>Greg Hooper</p>
       </div>
     </div>
 
@@ -111,7 +144,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Emanuel Barcenas</a>.
+      >. Coded by <a href="https://github.com/eman2point0">Emanuel Barcenas</a>.
     </div>
   </body>
 </html>
