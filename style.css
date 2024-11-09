@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Figtree;
+    src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow-color);
+
+    font-size: 1.6rem;
+    --white-color: hsl(0,0%, 100%);
+    --yellow-color: hsl(47, 88%, 63%);
+    --gray-light-color: hsl(0,0%, 42%);
+    --gray-dark-color: hsl(0,0%,7%);
+}
+
+.card{
+    width: 384px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    
+    background-color: var(--white-color);
+    padding: 24px;
+    gap: 24px;
+    font-family: Figtree;
+    border: 1px solid var(--gray-dark-color);
+    box-shadow: 0.5em 0.5em var(--gray-dark-color);
+    .image-container{
+        
+        
+        img{
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    .text-content{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .topic{
+            width: max-content;
+            font-size: 1.4rem;
+            
+            background-color: var(--yellow-color);
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+
+        .low-contrast{
+            font-size: 1.4rem;
+        }
+        h1{
+            font-size: 2.4rem;
+
+            a{
+                text-decoration: none;
+                font-weight: 800;
+                color: var(--gray-dark-color);
+            }
+        }
+        .high-contrast{
+            font-size: 1.6rem;
+            color: var(--gray-light-color);
+        }
+    }
+    .profile-section{
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: 800;
+        gap: 12px;
+
+        img{
+            width: 32px;
+        }
+
+
+
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
